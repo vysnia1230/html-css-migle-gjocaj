@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Cart | Rainy Days</title>
+  <meta name="description" content="Review the jackets in your Rainy Days cart, add a discount code and continue to secure checkout. Free delivery on orders over kr 999.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="announcement">
+      <p class="announcement-desktop">
+        Free shipping on orders over kr 999
+        <span class="dot" aria-hidden="true"></span>
+        60-day field trial on every jacket
+        <span class="dot" aria-hidden="true"></span>
+        Repair, don’t replace
+      </p>
+      <p class="announcement-mobile">Free shipping over kr 999 · 60-day field trial</p>
+    </div>
+
+    <div class="nav-bar container">
+      <!-- Mobile menu -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="menu-button">
+        <img src="images/icons/menu.svg" alt="Open menu" width="23" height="23">
+      </label>
+
+      <a href="index.html" class="logo">
+        <img src="images/RainyDays_Logo_header.png" alt="Rainy Days home page" width="116" height="43">
+      </a>
+
+      <nav class="main-nav" aria-label="Main menu">
+        <ul class="nav-list">
+          <li><a href="products.html">Jackets</a></li>
+          <li><a href="products.html">Collections</a></li>
+          <li><a href="coming-soon.html">Field Guide</a></li>
+          <li><a href="coming-soon.html">Our Story</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-icons">
+        <a href="coming-soon.html">
+          <img src="images/icons/search.svg" alt="Search" width="21" height="21">
+        </a>
+        <a href="coming-soon.html" class="account-link">
+          <img src="images/icons/account.svg" alt="My account" width="21" height="21">
+        </a>
+        <a href="cart.html" class="cart-link">
+          <img src="images/icons/cart.svg" alt="Cart" width="21" height="21">
+          <span class="cart-count">1</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- Page head -->
+    <section class="cart-head container">
+      <a href="products.html" class="back-link">
+        <img src="images/icons/chevron-left.svg" alt="" width="15" height="15">
+        Continue shopping
+      </a>
+      <div class="title-row">
+        <h1>Your Cart</h1>
+        <p class="count-pill">1 item</p>
+      </div>
+      <p class="delivery-note">
+        <img src="images/icons/check.svg" alt="" width="16" height="16">
+        Your order qualifies for free delivery.
+      </p>
+    </section>
+
+    <!-- Cart -->
+    <div class="cart-main container">
+      <section aria-label="Items in your cart">
+        <p class="cart-table-head">
+          <span>PRODUCT</span>
+          <span>QUANTITY</span>
+          <span>TOTAL</span>
+        </p>
+
+        <article class="cart-item">
+          <div class="cart-item-media">
+            <img src="images/RainyDays_Jacket6.jpg" alt="Black and graphite Nordland Expedition Jacket" width="900" height="1080">
+          </div>
+          <div class="cart-item-details">
+            <p class="card-category">EXPEDITION SHELL</p>
+            <h2 class="item-name">Nordland Expedition Jacket</h2>
+            <p class="item-attributes">
+              <span>Colour: Black / Graphite</span>
+              <span>Size: M</span>
+            </p>
+            <p class="item-actions">
+              <a href="coming-soon.html">
+                <img src="images/icons/trash.svg" alt="" width="15" height="15">
+                Remove
+              </a>
+              <a href="coming-soon.html">Save for later</a>
+            </p>
+          </div>
+          <div class="cart-item-qty">
+            <div class="qty">
+              <img src="images/icons/minus.svg" alt="" width="16" height="16">
+              <label for="quantity" class="visually-hidden">Quantity</label>
+              <input type="text" id="quantity" name="quantity" value="1" inputmode="numeric">
+              <img src="images/icons/plus.svg" alt="" width="16" height="16">
+            </div>
+          </div>
+          <div class="cart-item-total">
+            <p class="item-price">kr 3 499</p>
+            <p class="item-each">kr 3 499 each</p>
+          </div>
+        </article>
+
+        <div class="cart-actions">
+          <a href="products.html" class="text-link">
+            <img src="images/icons/chevron-left.svg" alt="" width="16" height="16">
+            Continue shopping
+          </a>
+          <p>Prices include 25% VAT</p>
+        </div>
+      </section>
+
+      <aside class="summary-column">
+        <section class="summary-card">
+          <h2 class="summary-title">Order Summary</h2>
+          <form class="promo-form" action="coming-soon.html">
+            <label for="promo-code" class="visually-hidden">Discount code</label>
+            <input type="text" id="promo-code" placeholder="Discount code">
+            <button type="submit" class="btn btn-outline">Apply</button>
+          </form>
+          <div class="summary-rows">
+            <p class="summary-row"><span>Subtotal</span><span>kr 3 499</span></p>
+            <p class="summary-row"><span>Delivery</span><span class="free">Free</span></p>
+            <p class="summary-row"><span>Estimated VAT (25%)</span><span>kr 700</span></p>
+          </div>
+          <p class="total-row">Total <span class="total-price">kr 3 499</span></p>
+          <a href="checkout.html" class="btn btn-primary btn-full">
+            Proceed to Checkout
+            <img src="images/icons/arrow-white.svg" alt="" width="18" height="18">
+          </a>
+          <p class="secure-note">Demo checkout · No real payment is taken</p>
+          <ul class="pay-marks" aria-label="Payment methods">
+            <li>VISA</li>
+            <li>MC</li>
+            <li>PayPal</li>
+            <li>Klarna</li>
+          </ul>
+        </section>
+        <ul class="icon-list">
+          <li><img src="images/icons/truck.svg" alt="" width="17" height="17"> Free delivery over kr 999 · 2–4 working days</li>
+          <li><img src="images/icons/refresh.svg" alt="" width="17" height="17"> 60-day field trial and free returns</li>
+          <li><img src="images/icons/help.svg" alt="" width="17" height="17"> Demo store – no real orders are placed</li>
+        </ul>
+      </aside>
+    </div>
+
+    <!-- Frequently bought with -->
+    <section class="section light-bg related">
+      <div class="container">
+        <p class="overline">Frequently bought with</p>
+        <h2>Finish the layering system</h2>
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="card-media">
+              <img src="images/RainyDays_Jacket3.jpg" alt="Red and black Rapid Trail Windbreaker" width="900" height="1088">
+              <a href="coming-soon.html" class="wishlist">
+                <img src="images/icons/heart.svg" alt="Save Rapid Trail Windbreaker to wishlist" width="16" height="16">
+              </a>
+            </div>
+            <div class="card-info">
+              <p class="card-category">WINDSHELL</p>
+              <h3 class="card-title"><a href="coming-soon.html">Rapid Trail Windbreaker</a></h3>
+              <p class="card-price">kr 1 149 <img src="images/icons/colourways.svg" alt="3 colours" width="41" height="11"></p>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="card-media">
+              <img src="images/RainyDays_Jacket2.jpg" alt="Grey Mistral Featherlight Shell" width="800" height="1024">
+              <a href="coming-soon.html" class="wishlist">
+                <img src="images/icons/heart.svg" alt="Save Mistral Featherlight Shell to wishlist" width="16" height="16">
+              </a>
+            </div>
+            <div class="card-info">
+              <p class="card-category">WOMEN’S WINDSHELL</p>
+              <h3 class="card-title"><a href="coming-soon.html">Mistral Featherlight Shell</a></h3>
+              <p class="card-price">kr 1 299 <img src="images/icons/colourways.svg" alt="3 colours" width="41" height="11"></p>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="card-media">
+              <img src="images/RainyDays_Jacket5.jpg" alt="Grey Harbour Storm Bomber jacket" width="900" height="937">
+              <a href="coming-soon.html" class="wishlist">
+                <img src="images/icons/heart.svg" alt="Save Harbour Storm Bomber to wishlist" width="16" height="16">
+              </a>
+            </div>
+            <div class="card-info">
+              <p class="card-category">EVERYDAY SHELL</p>
+              <h3 class="card-title"><a href="coming-soon.html">Harbour Storm Bomber</a></h3>
+              <p class="card-price">kr 1 799 <img src="images/icons/colourways.svg" alt="3 colours" width="41" height="11"></p>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="card-media">
+              <img src="images/RainyDays_Jacket1.jpg" alt="Orange and grey Fjord Offshore Parka" width="900" height="1099">
+              <a href="coming-soon.html" class="wishlist">
+                <img src="images/icons/heart.svg" alt="Save Fjord Offshore Parka to wishlist" width="16" height="16">
+              </a>
+            </div>
+            <div class="card-info">
+              <p class="card-category">COASTAL &amp; CANOE</p>
+              <h3 class="card-title"><a href="coming-soon.html">Fjord Offshore Parka</a></h3>
+              <p class="card-price">kr 2 899 <img src="images/icons/colourways.svg" alt="3 colours" width="41" height="11"></p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-top container">
+      <div class="footer-brand">
+        <img src="images/RainyDays_Logo_white.png" alt="Rainy Days" class="footer-logo" width="178" height="96">
+        <p>Technical outdoor layers built for hiking, skiing, camping and paddling. Made to be worn, repaired and worn again.</p>
+        <ul class="social-links">
+          <li><a href="coming-soon.html"><img src="images/icons/instagram.svg" alt="Instagram" width="20" height="20"></a></li>
+          <li><a href="coming-soon.html"><img src="images/icons/facebook.svg" alt="Facebook" width="20" height="20"></a></li>
+          <li><a href="coming-soon.html"><img src="images/icons/youtube.svg" alt="YouTube" width="20" height="20"></a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="footer-heading">Shop</h2>
+        <ul class="footer-links">
+          <li><a href="products.html">All Jackets</a></li>
+          <li><a href="products.html">New Arrivals</a></li>
+          <li><a href="products.html">Best Sellers</a></li>
+          <li><a href="products.html">Midlayers &amp; Fleece</a></li>
+          <li><a href="products.html">Outlet</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="footer-heading">Support</h2>
+        <ul class="footer-links">
+          <li><a href="coming-soon.html">Size Guide</a></li>
+          <li><a href="coming-soon.html">Shipping &amp; Returns</a></li>
+          <li><a href="coming-soon.html">Warranty &amp; Repairs</a></li>
+          <li><a href="coming-soon.html">Care Instructions</a></li>
+          <li><a href="coming-soon.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-company">
+        <h2 class="footer-heading">Company</h2>
+        <ul class="footer-links">
+          <li><a href="coming-soon.html">Our Story</a></li>
+          <li><a href="coming-soon.html">Sustainability</a></li>
+          <li><a href="coming-soon.html">Field Guide</a></li>
+          <li><a href="coming-soon.html">Ambassadors</a></li>
+          <li><a href="coming-soon.html">Careers</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-newsletter">
+        <h2 class="newsletter-heading">Field Notes</h2>
+        <p>Route reports, gear care and early access to new drops. One email a month, no noise.</p>
+        <form class="newsletter-form" action="coming-soon.html">
+          <label for="footer-email" class="visually-hidden">Email address</label>
+          <input type="email" id="footer-email" placeholder="Your email address" required>
+          <button type="submit" class="btn btn-primary">
+            Join
+            <img src="images/icons/arrow-right.svg" alt="" width="15" height="15">
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 Rainy Days. All rights reserved.</p>
+        <ul class="legal-links">
+          <li><a href="coming-soon.html">Privacy Policy</a></li>
+          <li><a href="coming-soon.html">Terms of Sale</a></li>
+          <li><a href="coming-soon.html">Cookies</a></li>
+        </ul>
+        <ul class="payment-list">
+          <li>VISA</li>
+          <li>MC</li>
+          <li>PayPal</li>
+          <li>Klarna</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

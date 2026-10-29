@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Confirmed | Rainy Days</title>
+  <meta name="description" content="Thank you for your Rainy Days order. See your order number, delivery details and what happens next.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="announcement">
+      <p class="announcement-desktop">
+        Free shipping on orders over kr 999
+        <span class="dot" aria-hidden="true"></span>
+        60-day field trial on every jacket
+        <span class="dot" aria-hidden="true"></span>
+        Repair, don’t replace
+      </p>
+      <p class="announcement-mobile">Free shipping over kr 999 · 60-day field trial</p>
+    </div>
+
+    <div class="nav-bar container">
+      <!-- Mobile menu -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="menu-button">
+        <img src="images/icons/menu.svg" alt="Open menu" width="23" height="23">
+      </label>
+
+      <a href="index.html" class="logo">
+        <img src="images/RainyDays_Logo_header.png" alt="Rainy Days home page" width="116" height="43">
+      </a>
+
+      <nav class="main-nav" aria-label="Main menu">
+        <ul class="nav-list">
+          <li><a href="products.html">Jackets</a></li>
+          <li><a href="products.html">Collections</a></li>
+          <li><a href="coming-soon.html">Field Guide</a></li>
+          <li><a href="coming-soon.html">Our Story</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-icons">
+        <a href="coming-soon.html">
+          <img src="images/icons/search.svg" alt="Search" width="21" height="21">
+        </a>
+        <a href="coming-soon.html" class="account-link">
+          <img src="images/icons/account.svg" alt="My account" width="21" height="21">
+        </a>
+        <a href="cart.html" class="cart-link">
+          <img src="images/icons/cart.svg" alt="Cart" width="21" height="21">
+          <span class="cart-count">1</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- Success -->
+    <section class="success-hero">
+      <div class="container">
+        <div class="success-icon">
+          <img src="images/icons/check-big.svg" alt="" width="34" height="34">
+        </div>
+        <p class="success-overline">Order confirmed</p>
+        <h1>Thank you! Your order is confirmed.</h1>
+        <p>We’ve sent your order confirmation by email. Your order number is RD-2026-04817.</p>
+      </div>
+    </section>
+
+    <!-- Order details -->
+    <section class="order-section container">
+      <div class="order-card">
+        <div class="order-card-head">
+          <h2 class="item-name">Order RD-2026-04817</h2>
+          <a href="coming-soon.html" class="text-link">
+            <img src="images/icons/download.svg" alt="" width="16" height="16">
+            Download receipt
+          </a>
+        </div>
+
+        <div class="order-block">
+          <dl class="order-meta">
+            <div><dt>ORDER DATE</dt><dd>16 September 2026</dd></div>
+            <div><dt>PAYMENT</dt><dd>Visa ending 4242</dd></div>
+            <div><dt>DELIVERY</dt><dd>Standard delivery</dd></div>
+            <div><dt>ESTIMATED ARRIVAL</dt><dd>18–22 September</dd></div>
+          </dl>
+        </div>
+
+        <div class="order-block">
+          <div class="order-item">
+            <div class="order-item-media">
+              <img src="images/RainyDays_Jacket6.jpg" alt="Black and graphite Nordland Expedition Jacket" width="900" height="1080">
+            </div>
+            <div class="order-item-details">
+              <p class="card-category">EXPEDITION SHELL</p>
+              <h3 class="item-name">Nordland Expedition Jacket</h3>
+              <p>Black / Graphite · Size M · Qty 1</p>
+            </div>
+            <p class="item-price">kr 3 499</p>
+          </div>
+        </div>
+
+        <div class="summary-rows">
+          <p class="summary-row"><span>Subtotal</span><span>kr 3 499</span></p>
+          <p class="summary-row"><span>Delivery</span><span class="free">Free</span></p>
+          <p class="summary-row"><span>VAT (25%, included)</span><span>kr 700</span></p>
+        </div>
+        <p class="total-row">Total paid <span class="total-price">kr 3 499</span></p>
+
+        <div class="order-block addresses">
+          <div>
+            <p class="address-title">DELIVERY ADDRESS</p>
+            <p>Alex Taylor<br>12 Example Street<br>12345 Example City<br>Example Country</p>
+          </div>
+          <div>
+            <p class="address-title">BILLING ADDRESS</p>
+            <p>Alex Taylor<br>12 Example Street<br>12345 Example City<br>Example Country</p>
+          </div>
+          <div>
+            <p class="address-title">CONTACT</p>
+            <p>customer@example.com<br>+00 123 456 789</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What happens next -->
+    <section class="next-section container">
+      <h2>What happens next</h2>
+      <div class="next-steps">
+        <article class="next-step">
+          <span class="icon-ring"><img src="images/icons/mail.svg" alt="" width="20" height="20"></span>
+          <h3>Confirmation sent</h3>
+          <p>A receipt is already in your inbox. Check spam if it hasn’t landed in a few minutes.</p>
+        </article>
+        <article class="next-step">
+          <span class="icon-ring"><img src="images/icons/box.svg" alt="" width="20" height="20"></span>
+          <h3>Packed and dispatched</h3>
+          <p>We pick and pack your order within one working day.</p>
+        </article>
+        <article class="next-step">
+          <span class="icon-ring"><img src="images/icons/truck.svg" alt="" width="20" height="20"></span>
+          <h3>Tracked to your door</h3>
+          <p>You’ll get a tracking link by email as soon as the parcel leaves us.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Buttons -->
+    <div class="confirm-actions container">
+      <a href="products.html" class="btn btn-primary">
+        Continue Shopping
+        <img src="images/icons/arrow-white.svg" alt="" width="18" height="18">
+      </a>
+      <p class="help-note">
+        <img src="images/icons/help.svg" alt="" width="17" height="17">
+        Something not right? Reply to your confirmation email and we’ll help.
+      </p>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-top container">
+      <div class="footer-brand">
+        <img src="images/RainyDays_Logo_white.png" alt="Rainy Days" class="footer-logo" width="178" height="96">
+        <p>Technical outdoor layers built for hiking, skiing, camping and paddling. Made to be worn, repaired and worn again.</p>
+        <ul class="social-links">
+          <li><a href="coming-soon.html"><img src="images/icons/instagram.svg" alt="Instagram" width="20" height="20"></a></li>
+          <li><a href="coming-soon.html"><img src="images/icons/facebook.svg" alt="Facebook" width="20" height="20"></a></li>
+          <li><a href="coming-soon.html"><img src="images/icons/youtube.svg" alt="YouTube" width="20" height="20"></a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="footer-heading">Shop</h2>
+        <ul class="footer-links">
+          <li><a href="products.html">All Jackets</a></li>
+          <li><a href="products.html">New Arrivals</a></li>
+          <li><a href="products.html">Best Sellers</a></li>
+          <li><a href="products.html">Midlayers &amp; Fleece</a></li>
+          <li><a href="products.html">Outlet</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="footer-heading">Support</h2>
+        <ul class="footer-links">
+          <li><a href="coming-soon.html">Size Guide</a></li>
+          <li><a href="coming-soon.html">Shipping &amp; Returns</a></li>
+          <li><a href="coming-soon.html">Warranty &amp; Repairs</a></li>
+          <li><a href="coming-soon.html">Care Instructions</a></li>
+          <li><a href="coming-soon.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-company">
+        <h2 class="footer-heading">Company</h2>
+        <ul class="footer-links">
+          <li><a href="coming-soon.html">Our Story</a></li>
+          <li><a href="coming-soon.html">Sustainability</a></li>
+          <li><a href="coming-soon.html">Field Guide</a></li>
+          <li><a href="coming-soon.html">Ambassadors</a></li>
+          <li><a href="coming-soon.html">Careers</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-newsletter">
+        <h2 class="newsletter-heading">Field Notes</h2>
+        <p>Route reports, gear care and early access to new drops. One email a month, no noise.</p>
+        <form class="newsletter-form" action="coming-soon.html">
+          <label for="footer-email" class="visually-hidden">Email address</label>
+          <input type="email" id="footer-email" placeholder="Your email address" required>
+          <button type="submit" class="btn btn-primary">
+            Join
+            <img src="images/icons/arrow-right.svg" alt="" width="15" height="15">
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 Rainy Days. All rights reserved.</p>
+        <ul class="legal-links">
+          <li><a href="coming-soon.html">Privacy Policy</a></li>
+          <li><a href="coming-soon.html">Terms of Sale</a></li>
+          <li><a href="coming-soon.html">Cookies</a></li>
+        </ul>
+        <ul class="payment-list">
+          <li>VISA</li>
+          <li>MC</li>
+          <li>PayPal</li>
+          <li>Klarna</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
